@@ -3,12 +3,17 @@
 
 $theme-colors: (
  primary: #7915d3,
+ secondary: #5a189a,
+ purple2: #b8d0eb,
+ purple3: #7678ed
 );
 
 $font-family-sans-serif: "Encode Sans", sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
  "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
+
+
 
 html,
 body {
@@ -17,7 +22,7 @@ body {
 
 .custom-grid {
  display: grid;
- grid-template-columns: repeat(2, 1fr);
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
  grid-template-rows: repeat(2, 200px);
  gap: 25px;
 }
@@ -53,10 +58,49 @@ body {
  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
+#sub-sections .row {
+	height: 50vh;
+}
+
+#sub-sections img {
+	height: 40vh;
+	width: 40vh;
+	border-radius: 100px;
+	object-fit: cover;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.justify-space-around {
+	justify-content: space-around;
+}
+
+.justify-space-evenly {
+	justify-content: space-evenly;
+}
+
 @media (min-width: 1024px) {
  .carousel-hero {
   bottom: 30%;
  }
+
+ h2.h1 {
+	 font-size: 3rem;
+ }
+
+ .custom-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 200px);
+	gap: 25px;
+ }
+
+ #steps .custom-grid-item {
+	padding: 50px;
+ }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -66,14 +110,28 @@ body {
 }
 
 @media (max-width: 320px) {
+	.carousel-hero {
+		left: 5%;
+		right: 5%;
+	}
+
  .carousel-item img {
   height: 100vh;
   width: auto;
   object-fit: cover;
  }
 
+ h2.h1{
+	font-size: 2.3rem;
+ }
+
  .carousel-hero {
-  bottom: 5%;
+  bottom: 35%;
+ }
+
+ #sub-sections img {
+	width: 20vh;
+	height: 20vh;
  }
 }
 

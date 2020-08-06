@@ -12,26 +12,26 @@
   <link rel="stylesheet" href="css/custom.css">
 
 
-  <title>Hello, world!</title>
+  <title>Adopt a pet</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
-      <a class="navbar-brand "><img src="images/logo-gradient.svg" height="40" /></a>
+      <a class="navbar-brand "><img src="images/logo-white.svg" height="40" /></a>
       <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="my-nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto text-white">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link text-white" href="#">
               <i class="fa fa-search mr-1"></i>Find a friend <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link text-white" href="#">
               <i class="fa fa-user mr-1"></i>About us<span class="sr-only">(current)</span>
             </a>
           </li>
@@ -46,20 +46,24 @@
         <div class="carousel-item active position-relative">
           <img class="d-block w-100" src="images/slider1.jpg" alt="">
           <div class="justify-itens-center carousel-hero">
-            <h2 class="h1 text-primary font-weight-bold">Look for friend near you</h2>
+            <h2 class="h1 h5-sm text-primary font-weight-bold">Look for friend near you</h2>
             <div class="card">
-              <div class="card-body">
+              <div class="card-body p-0">
                 <form class="form-inline p-0 py-md-4 px-md-2  p-lg-5 b-rounded" method="get" action="">
                   <div class="input-group input-group-lg w-100">
                     <input class="form-control" type="text" name="" placeholder="Search for an type or by location"
                       aria-label="Recipient's ">
                     <div class="input-group-append">
-                      <button class="btn btn-primary" type="button"><i class="fas fa-paw mr-1"></i> Search</button>
+                      <button class="btn btn-primary d-none d-md-block" type="button"><i class="fas fa-paw mr-1"></i>
+                        Search</button>
                     </div>
+
                   </div>
                 </form>
               </div>
             </div>
+            <button class="btn btn-primary d-block d-md-none w-100" type="button"><i class="fas fa-paw mr-1"></i>
+              Search</button>
           </div>
         </div>
       </div>
@@ -88,17 +92,103 @@
         </div>
         <div class="custom-grid-item  d-flex justify-content-center">
           <img src="images/icons/adopt-icon.svg" class="w-5 text-center" />
-          <h5>3 - It's a match</h5>
+          <h5>4 - It's a match</h5>
           <p class="text-center">Go get your new friend and start enjoying their love right away</p>
-
-
         </div>
-
       </div>
     </section>
-
+    <section id="sub-sections">
+      <div class="row mt-5">
+        <div class="col-12 d-block text-center d-md-flex align-items-center bg-secondary">
+          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
+            <h6 class="text-white">Animals abandoned is a real issue</h6>
+          </div>
+          <div class="col-4">
+            <figure>
+              <img src="images/straydog.jpg" alt="..." />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-block text-center d-md-flex align-items-center bg-purple2">
+          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
+            <h6 class="text-white">Animals abandoned is a real issue</h6>
+          </div>
+          <div class="col-4">
+            <figure>
+              <img src="images/playingdog.jpg" alt="..." />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-block text-center d-md-flex align-items-center bg-purple3">
+          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
+            <h6 class="text-white">Animals abandoned is a real issue</h6>
+          </div>
+          <div class="col-md-4 col-12">
+            <figure>
+              <img src="images/puppy.jpg" alt="..." />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <footer>
+    <div class="row">
+      <div class="col-12 ">
+        <ul class="my-3 list-unstyled d-flex justify-space-evenly align-items-center">
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Home</a></li>
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Search</a></li>
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold">About</a></li>
+          <li><img src="images/icons/icon-paw.svg" height="50" /></li>
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Facebook</a></li>
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold"">Twitter</a></li>
+          <li><a href=" #" class="btn-link btn text-primary font-weight-bold">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mt-5 mb-1 ">
+      <div class="d-flex flex-row">
+        <div class="col-12 col-md-5 text-center">
+          <h6>SUBSCRIBE</h6>
+          <form class="form-inline  b-rounded" method="get" action="">
+            <div class="input-group w-100">
+              <input class="form-control" type="text" name="" placeholder="Subscribe" aria-label="Recipient's ">
+              <div class="input-group-append">
+                <button class="btn btn-primary d-none d-md-block" type="button"><i class="fas fa-paw mr-1"></i>
+                  Go!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-md-2 text-center">
+        </div>
+        <div class="col-12 col-md-5 text-center">
+          <h6>CONTACT</h6>
+          <p>Want to get in touch with us <br />Reach us at <a href="#" class="text-primary">diegoalira@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="col-12 text-center">
+          <a href="#">
+            <img src="images/logo-gradient.svg" height="20"/>
+          </a>
+          <br/>
+          <small class="text-sm">Developed with 💗 by <a href="https://github.com/lirad">Diego Lira</a></small>
+        </div>
+      
+      </div>
+    </div>
 
+    </div>
+  </footer>
 
 
   <!-- Optional JavaScript -->
