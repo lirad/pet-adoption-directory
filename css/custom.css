@@ -1,0 +1,34 @@
+.carousel-hero {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .carousel-hero {
+    bottom: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-hero {
+    bottom: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .carousel-item img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .carousel-hero {
+    bottom: 5%;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
