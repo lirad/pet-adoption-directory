@@ -1,29 +1,68 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap");
 
+$theme-colors: (
+ primary: #7915d3,
+);
+
+$font-family-sans-serif: "Encode Sans", sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+ "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+html,
+body {
+ font-family: $font-family-sans-serif !important;
+}
+
+.custom-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2, 200px);
+ gap: 25px;
+}
 
 .carousel-hero {
-  position: absolute;
-  right: 15%;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
- }
+ position: absolute;
+ right: 15%;
+ left: 15%;
+ z-index: 10;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ color: #fff;
+ text-align: center;
+}
+
+.carousel-hero .card {
+ background-color: rgb(255 255 255 / 0.7);
+}
+
+#steps img {
+ width: 50px;
+ height: 50px;
+}
+
+#steps .custom-grid-item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 12px;
+ padding: 5px;
+ -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+ -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+ box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
 
 @media (min-width: 1024px) {
-	.carousel-hero{
-		bottom: 30%;
-	}
+ .carousel-hero {
+  bottom: 30%;
+ }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-	.carousel-hero {
-		bottom: 30%;
-	 }
+ .carousel-hero {
+  bottom: 30%;
+ }
 }
 
 @media (max-width: 320px) {
@@ -34,6 +73,8 @@
  }
 
  .carousel-hero {
-	bottom: 5%;
+  bottom: 5%;
  }
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap";

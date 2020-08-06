@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="css/custom.css">
+
 
   <title>Hello, world!</title>
 </head>
@@ -45,15 +46,15 @@
         <div class="carousel-item active position-relative">
           <img class="d-block w-100" src="images/slider1.jpg" alt="">
           <div class="justify-itens-center carousel-hero">
-            <h2 class="h1 text-dark">Look for friend near you</h2>
+            <h2 class="h1 text-primary font-weight-bold">Look for friend near you</h2>
             <div class="card">
               <div class="card-body">
-                <form class="form-inline p-0 p-md-5 b-rounded" method="get" action="">
+                <form class="form-inline p-0 py-md-4 px-md-2  p-lg-5 b-rounded" method="get" action="">
                   <div class="input-group input-group-lg w-100">
                     <input class="form-control" type="text" name="" placeholder="Search for an type or by location"
                       aria-label="Recipient's ">
                     <div class="input-group-append">
-                      <span class="input-group-text input-lg">Search</span>
+                      <button class="btn btn-primary" type="button"><i class="fas fa-paw mr-1"></i> Search</button>
                     </div>
                   </div>
                 </form>
@@ -62,12 +63,49 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <section>
+      <h5 class="p-5 text-center text-primary text-uppercase">AdoptApet works in simple way</h5>
+      <div class="custom-grid" id="steps">
+        <div class="custom-grid-item  d-flex justify-content-center">
+          <img src="images/icons/research-icon.svg" class="w-5 text-center" />
+          <h5>1 - Search</h5>
+          <p class="text-center">Look for a companion who is needing for a new home and love</p>
+
+        </div>
+        <div class="custom-grid-item  justify-content-center">
+          <img src="images/icons/locate-icon.svg" class="w-5 text-center" />
+          <h5>2 - Locate</h5>
+          <p class="text-center">Check out if your buddy is in reacheable distance for you to get them</p>
+
+        </div>
+        <div class="custom-grid-item  d-flex justify-content-center">
+          <img src="images/icons/apply-icon.svg" class="w-5 text-center" />
+          <h5>3 - Apply</h5>
+          <p class="text-center">Write a small paragraph about you and why do want to adopt a new pet</p>
+
+        </div>
+        <div class="custom-grid-item  d-flex justify-content-center">
+          <img src="images/icons/adopt-icon.svg" class="w-5 text-center" />
+          <h5>3 - It's a match</h5>
+          <p class="text-center">Go get your new friend and start enjoying their love right away</p>
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
