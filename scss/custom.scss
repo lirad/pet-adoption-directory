@@ -14,10 +14,22 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 $font-family-base: $font-family-sans-serif !default;
 
 
-
 html,
 body {
  font-family: $font-family-sans-serif !important;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: none;
+	border-radius: 0.25rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 .custom-grid {

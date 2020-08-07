@@ -9900,6 +9900,19 @@ body {
   font-family: "Encode Sans", sans-serif !important;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
 .custom-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
