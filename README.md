@@ -52,11 +52,11 @@ And edit the `scss/custom.scss` file.
 
 All the pictures were taken from [Pexels](https://pexels.com) and done by the following artists:
 
-https://www.instagram.com/elum3a/
-https://www.instagram.com/dominika_roseclay/
-https://www.instagram.com/UPTHEBOOHAI/
-https://www.instagram.com/dpopbes/
-https://www.instagram.com/marcelochagasfotografia/
+- https://www.instagram.com/elum3a/
+- https://www.instagram.com/dominika_roseclay/
+- https://www.instagram.com/UPTHEBOOHAI/
+- https://www.instagram.com/dpopbes/
+- https://www.instagram.com/marcelochagasfotografia/
 
 A big THANK YOU for you work!
 
