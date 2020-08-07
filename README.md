@@ -16,7 +16,7 @@ The project is built using HTML and CSS, SASS and the Bootstrap framework.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/lirad/pet-adoption-directory/feature-branch/index.html)
+[Live Demo Link](https://lirad.github.io/pet-adoption-directory/)
 
 ## To get a local copy up and running follow these simple example steps.
 
