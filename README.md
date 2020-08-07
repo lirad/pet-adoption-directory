@@ -2,13 +2,13 @@
 
 # Pet adoption directory
 
-> This website is a showcase for a pet adoption directory, the idea and the design are originals but inspired by the ![design of Mathew Njuguna and others on Behance]([https://www.behance.net/gallery/25563385/PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE)). 
+> This website is a showcase for a pet adoption directory, the idea and the design are originals but inspired by the [design of Mathew Njuguna and others on Behance]([https://www.behance.net/gallery/25563385/PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE)). 
 
 >Three pages were built: landing page, search results and select result.
 
 ## Screenshots
 
-![screenshot](./screenshot-devices.png)
+![screenshot](./screenshot.png)
 
 ## Built With
 
@@ -16,7 +16,7 @@ The project is built using HTML and CSS, SASS and the Bootstrap framework.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cristianCeamatu/microverse-new-york-times-article-page/adding-article-page/index.html)
+[Live Demo Link](https://raw.githack.com/lirad/pet-adoption-directory/feature-branch/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 
