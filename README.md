@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Pet adoption directory
+# Adopt a Pet adoption directory
 
 > This website is a showcase for a pet adoption directory, the idea and the design are originals but inspired by the [design of Mathew Njuguna and others on Behance]([https://www.behance.net/gallery/25563385/PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE)). 
 
@@ -16,7 +16,7 @@ The project is built using HTML and CSS, SASS and the Bootstrap framework.
 
 ## Live Demo
 
-[Live Demo Link](https://lirad.github.io/pet-adoption-directory/)
+🔗 [Live Demo Link](https://lirad.github.io/pet-adoption-directory/)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -48,7 +48,7 @@ And edit the `scss/custom.scss` file.
 - Twitter: [@twitterhandle](https://twitter.com/lirad)
 - Linkedin: [linkedin](https://www.linkedin.com/in/diegoalira/)
 
-## Photos credits
+## 📸 Photos credits
 
 All the pictures were taken from [Pexels](https://pexels.com) and done by the following artists:
 
