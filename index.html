@@ -2,43 +2,48 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="dist/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="dist/bootstrap/custom.css">
 
 
   <title>Adopt a pet</title>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container">
-      <a class="navbar-brand "><img src="images/logo-white.svg" height="40" /></a>
-      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="my-nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto text-white">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">
-              <i class="fa fa-search mr-1"></i>Find a friend <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">
-              <i class="fa fa-user mr-1"></i>About us<span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+      <div class="container">
+        <a class="navbar-brand " href="/"><img src="images/logo-white.svg" height="40" alt="logo" /></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" type="button"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto text-white">
+            <li class="nav-item active">
+              <a href="/search-results.html" class="nav-link text-white">
+                <i class="fa fa-search mr-1"></i>Find a friend <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <i class="fa fa-user mr-2"></i>About us<span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
 
   <div class="container-fluid">
     <div id="my-carousel" class="carousel slide" data-ride="carousel">
@@ -46,109 +51,121 @@
         <div class="carousel-item active position-relative">
           <img class="d-block w-100" src="images/slider1.jpg" alt="">
           <div class="justify-itens-center carousel-hero">
-            <h2 class="h1 h5-sm text-primary font-weight-bold">Look for friend near you</h2>
+            <h2 class="h1 h5-sm text-primary font-weight-bold">Find a friend near you</h2>
             <div class="card">
               <div class="card-body p-0">
-                <form class="form-inline p-0 py-md-4 px-md-2  p-lg-5 b-rounded" method="get" action="">
+                <form class="form-inline p-0 py-md-4 px-md-2  p-lg-5 b-rounded" method="get" action="/">
                   <div class="input-group input-group-lg w-100">
-                    <input class="form-control" type="text" name="" placeholder="Search for an type or by location"
-                      aria-label="Recipient's ">
+                    <input class="form-control" type="text" name="search"
+                      placeholder="Search for an type or by location" aria-label="Recipient's ">
                     <div class="input-group-append">
-                      <button class="btn btn-primary d-none d-md-block" type="button"><i class="fas fa-paw mr-1"></i>
-                        Search</button>
+                      <a class="btn btn-primary d-none d-md-block" href="search-results.html"><i
+                          class="fas fa-paw mr-1"></i>
+                        Search</a>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <button class="btn btn-primary d-block d-md-none w-100" type="button"><i class="fas fa-paw mr-1"></i>
-              Search</button>
+            <a href="search-results.html" class="btn btn-primary d-block d-md-none w-100"><i
+                class="fas fa-paw mr-1"></i>
+              Search</a>
           </div>
         </div>
       </div>
     </div>
 
+
+
     <section>
       <h5 class="p-5 text-center text-primary text-uppercase">AdoptApet works in simple way</h5>
       <div class="custom-grid" id="steps">
         <div class="custom-grid-item  d-flex justify-content-center">
-          <img src="images/icons/research-icon.svg" class="w-5 text-center" />
+          <img src="images/icons/research-icon.svg" class="w-5 text-center" alt="search" />
           <h5>1 - Search</h5>
           <p class="text-center">Look for a companion who is needing for a new home and love</p>
 
         </div>
         <div class="custom-grid-item  justify-content-center">
-          <img src="images/icons/locate-icon.svg" class="w-5 text-center" />
+          <img src="images/icons/locate-icon.svg" class="w-5 text-center" alt="locate" />
           <h5>2 - Locate</h5>
           <p class="text-center">Check out if your buddy is in reacheable distance for you to get them</p>
 
         </div>
         <div class="custom-grid-item  d-flex justify-content-center">
-          <img src="images/icons/apply-icon.svg" class="w-5 text-center" />
+          <img src="images/icons/apply-icon.svg" class="w-5 text-center" alt="apply" />
           <h5>3 - Apply</h5>
           <p class="text-center">Write a small paragraph about you and why do want to adopt a new pet</p>
 
         </div>
         <div class="custom-grid-item  d-flex justify-content-center">
-          <img src="images/icons/adopt-icon.svg" class="w-5 text-center" />
+          <img src="images/icons/adopt-icon.svg" class="w-5 text-center" alt="adopt" />
           <h5>4 - It's a match</h5>
           <p class="text-center">Go get your new friend and start enjoying their love right away</p>
         </div>
       </div>
     </section>
+
+    <!-- start subsection -->
+
     <section id="sub-sections">
-      <div class="row mt-5">
-        <div class="col-12 d-block text-center d-md-flex align-items-center bg-secondary">
-          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
-            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
-            <h6 class="text-white">Animals abandoned is a real issue</h6>
-          </div>
-          <div class="col-4">
-            <figure>
-              <img src="images/straydog.jpg" alt="..." />
-            </figure>
-          </div>
+      <div class="row mt-5 bg-primary text-center d-flex align-itens-center">
+
+        <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+          <h3 class="text-white font-weight-light h3">AdoptApet has more than </h3>
+          <h4 class="text-white">1.0000 animals in need for a home</h4>
         </div>
+        <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
+          <figure>
+            <img src="images/straydog.jpg" alt="dog" />
+          </figure>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-12 d-block text-center d-md-flex align-items-center bg-purple2">
-          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
-            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
-            <h6 class="text-white">Animals abandoned is a real issue</h6>
-          </div>
-          <div class="col-4">
-            <figure>
-              <img src="images/playingdog.jpg" alt="..." />
-            </figure>
-          </div>
+
+      <div class="row bg-purple2 text-center d-flex align-itens-center">
+
+        <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+          <h3 class="text-white font-weight-light h3">You can help to end this</h3>
+          <h4 class="text-white">right now adopating an homeless pet</h4>
         </div>
+        <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
+          <figure>
+            <img src="images/puppy.jpg" alt="dog" />
+          </figure>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-12 d-block text-center d-md-flex align-items-center bg-purple3">
-          <div class="col-md-8 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
-            <h5 class="text-white font-weight-light">Animals abandoned is a real issue</h5>
-            <h6 class="text-white">Animals abandoned is a real issue</h6>
-          </div>
-          <div class="col-md-4 col-12">
-            <figure>
-              <img src="images/puppy.jpg" alt="..." />
-            </figure>
-          </div>
+
+      <div class="row bg-purple3 text-center d-flex align-itens-center">
+
+        <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
+          <h3 class="text-white font-weight-light h3">It is very easy, use our locator</h3>
+          <h4 class="text-white h4">and spread love!</h4>
         </div>
+        <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
+          <figure>
+            <img src="images/playingdog.jpg" alt="dog" />
+          </figure>
+        </div>
+
       </div>
     </section>
+
   </div>
+
+  <!-- end subsection -->
 
   <footer>
     <div class="flex-row">
       <div class="col-12 ">
         <ul class="my-3 list-unstyled d-flex justify-space-evenly align-items-center flex-wrap">
           <li><a href="#" class="btn-link btn text-primary font-weight-bold">Home</a></li>
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Search</a></li>
+          <li><a href="/search-results.html" class="btn-link btn text-primary font-weight-bold">Search</a></li>
           <li><a href="#" class="btn-link btn text-primary font-weight-bold">About</a></li>
-          <li class="d-none d-md-block"><img src="images/icons/icon-paw.svg" height="50" /></li>
+          <li class="d-none d-md-block"><img src="images/icons/icon-paw.svg" height="50" alt="icon" /></li>
           <li><a href="#" class="btn-link btn text-primary font-weight-bold">Facebook</a></li>
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold"">Twitter</a></li>
+          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Twitter</a></li>
           <li><a href=" #" class="btn-link btn text-primary font-weight-bold">Instagram</a></li>
         </ul>
       </div>
@@ -157,35 +174,35 @@
       <div class="row">
         <div class="col-12 col-md-5 text-center">
           <h6><i class="far fa-envelope mr-1 text-primary"></i>SUBSCRIBE</h6>
-          <form class="form-inline  b-rounded" method="get" action="">
+          <form class="form-inline  b-rounded" method="get" action="/">
             <div class="input-group w-100">
-              <input class="form-control" type="text" name="" placeholder="Subscribe" aria-label="Recipient's ">
+              <input class="form-control" type="text" name="search" placeholder="Subscribe" aria-label="Search">
               <div class="input-group-append">
                 <button class="btn btn-primary d-none d-md-block" type="button"><i class="fas fa-paw mr-1"></i>
                   Go!</button>
               </div>
             </div>
           </form>
-        </div>      
+        </div>
 
-      <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
-        <h6><i class="far fa-paper-plane mr-1 text-primary"></i> CONTACT</h6>
-        <p>Want to get in touch with us <br />Reach us at <a href="#" class="text-primary">diegoalira@gmail.com</a>
-        </p>
+        <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
+          <h6><i class="far fa-paper-plane mr-1 text-primary"></i> CONTACT</h6>
+          <p>Want to get in touch with us <br />Reach us at <a href="#" class="text-primary">diegoalira@gmail.com</a>
+          </p>
+        </div>
+
       </div>
 
-    </div>
-
-    <!-- Footer's last part -->
-    <div class="d-flex flex-row">
-      <div class="col-12 text-center">
-        <a href="#">
-          <img src="images/logo-gradient.svg" height="20" />
-        </a>
-        <br />
-        <small class="text-sm">Developed with 💗 by <a href="https://github.com/lirad">Diego Lira</a></small>
+      <!-- Footer's last part -->
+      <div class="d-flex flex-row">
+        <div class="col-12 text-center">
+          <a href="#">
+            <img src="images/logo-gradient.svg" height="20" alt="logo" />
+          </a>
+          <br />
+          <small class="text-sm">Developed with 💗 by <a href="https://github.com/lirad">Diego Lira</a></small>
+        </div>
       </div>
-    </div>
     </div>
   </footer>
 
@@ -193,9 +210,15 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

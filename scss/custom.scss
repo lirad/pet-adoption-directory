@@ -1,150 +1,177 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap");
 
 $theme-colors: (
- primary: #7915d3,
- secondary: #5a189a,
- purple2: #b8d0eb,
- purple3: #7678ed
+  primary: #7915d3,
+  secondary: #5a189a,
+  purple2: #b8d0eb,
+  purple3: #7678ed,
 );
 
-$font-family-sans-serif: "Encode Sans", sans-serif;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
- "Liberation Mono", "Courier New", monospace !default;
-$font-family-base: $font-family-sans-serif !default;
+.primary {
+  color: #7915d3;
+}
 
+$font-family-sans-serif: "Encode Sans", sans-serif;
+$font-family-monospace: "SFMono-Regular", "Menlo", "Monaco", "Consolas",
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 
 html,
 body {
- font-family: $font-family-sans-serif !important;
+  font-family: $font-family-sans-serif !important;
 }
 
 .card {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border: none;
-	border-radius: 0.25rem;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-}
-
-.custom-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- grid-template-rows: repeat(2, 200px);
- gap: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 .carousel-hero {
- position: absolute;
- right: 15%;
- left: 15%;
- z-index: 10;
- padding-top: 20px;
- padding-bottom: 20px;
- color: #fff;
- text-align: center;
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 .carousel-hero .card {
- background-color: rgb(255 255 255 / 0.7);
+  background-color: rgb(255 255 255 / 0.7);
 }
 
 #steps img {
- width: 50px;
- height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  gap: 25px;
 }
 
 #steps .custom-grid-item {
- display: flex;
- flex-direction: column;
- align-items: center;
- border-radius: 12px;
- padding: 5px;
- -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
- -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
- box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 #sub-sections .row {
-	height: 50vh;
+  height: 50vh;
 }
 
 #sub-sections img {
-	height: 40vh;
-	width: 40vh;
-	border-radius: 100px;
-	object-fit: cover;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 100px;
+  object-fit: cover;
 }
 
 .justify-space-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-space-around {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-space-evenly {
-	justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+
+.align-itens-center {
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
- .carousel-hero {
-  bottom: 30%;
- }
+  .carousel-hero {
+    bottom: 30%;
+  }
 
- h2.h1 {
-	 font-size: 3rem;
- }
+  #sub-sections img {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 300px;
+    object-fit: cover;
+  }
 
- .custom-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 200px);
-	gap: 25px;
- }
+  h2.h1 {
+    font-size: 7rem;
+  }
 
- #steps .custom-grid-item {
-	padding: 50px;
- }
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 25px;
+  }
 
+  #steps .custom-grid-item {
+    padding: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
- .carousel-hero {
-  bottom: 30%;
- }
+  .carousel-hero {
+    bottom: 30%;
+  }
+
+  #sub-sections img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 200px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 320px) {
-	.carousel-hero {
-		left: 5%;
-		right: 5%;
-	}
+  .carousel-hero {
+    left: 5%;
+    right: 5%;
+    bottom: 35%;
+  }
 
- .carousel-item img {
-  height: 100vh;
-  width: auto;
-  object-fit: cover;
- }
+  .carousel-item img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+  }
 
- h2.h1{
-	font-size: 2.3rem;
- }
+  h2.h1 {
+    font-size: 2.3rem;
+  }
 
- .carousel-hero {
-  bottom: 35%;
- }
+  h3.h3 {
+    font-size: 1.2rem;
+  }
 
- #sub-sections img {
-	width: 20vh;
-	height: 20vh;
- }
+  h4.h4 {
+    font-size: 1rem;
+  }
+
+  #sub-sections img {
+    width: 15vh;
+    height: 15vh;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
