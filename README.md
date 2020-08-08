@@ -44,19 +44,19 @@ And edit the `scss/custom.scss` file.
 
 👤 **Diego Lira**
 
-- Github: [@githubhandle](https://github.com/lirad)
-- Twitter: [@twitterhandle](https://twitter.com/lirad)
-- Linkedin: [linkedin](https://www.linkedin.com/in/diegoalira/)
+- Github: [@lirad](https://github.com/lirad)
+- Twitter: [@lirad](https://twitter.com/lirad)
+- Linkedin: [Diego A Lira](https://www.linkedin.com/in/diegoalira/)
 
 ## 📸 Photos credits
 
 All the pictures were taken from [Pexels](https://pexels.com) and done by the following artists:
 
-https://www.instagram.com/elum3a/
-https://www.instagram.com/dominika_roseclay/
-https://www.instagram.com/UPTHEBOOHAI/
-https://www.instagram.com/dpopbes/
-https://www.instagram.com/marcelochagasfotografia/
+- https://www.instagram.com/elum3a/
+- https://www.instagram.com/dominika_roseclay/
+- https://www.instagram.com/UPTHEBOOHAI/
+- https://www.instagram.com/dpopbes/
+- https://www.instagram.com/marcelochagasfotografia/
 
 A big THANK YOU for you work!
 
