@@ -44,9 +44,9 @@ And edit the `scss/custom.scss` file.
 
 👤 **Diego Lira**
 
-- Github: [@githubhandle](https://github.com/lirad)
-- Twitter: [@twitterhandle](https://twitter.com/lirad)
-- Linkedin: [linkedin](https://www.linkedin.com/in/diegoalira/)
+- Github: [@lirad](https://github.com/lirad)
+- Twitter: [@lirad](https://twitter.com/lirad)
+- Linkedin: [Diego A Lira](https://www.linkedin.com/in/diegoalira/)
 
 ## 📸 Photos credits
 
