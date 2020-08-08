@@ -2,9 +2,9 @@
 
 # Adopt a Pet adoption directory
 
-> This website is a showcase for a pet adoption directory, the idea and the design are originals but inspired by the [design of Mathew Njuguna and others on Behance]([https://www.behance.net/gallery/25563385/PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE)). 
+ This website is a showcase for a pet adoption directory, the idea and the design are originals but inspired by the [design of Mathew Njuguna and others on Behance]([https://www.behance.net/gallery/25563385/PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE)). 
 
->Three pages were built: landing page, search results and select result.
+Three pages were built: landing page, search results and selected result.
 
 ## Screenshots
 
