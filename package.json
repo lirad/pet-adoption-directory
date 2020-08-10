@@ -1,10 +1,12 @@
 {
-  "name": "linters-testing",
+  "name": "adoptapet",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
+    "webhint": "hint .",
+    "stylelint": "stylelint **/*.css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
     "stylelint-scss": "^3.17.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
   }
 }

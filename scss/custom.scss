@@ -1,0 +1,240 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+$theme-colors: (
+  primary: #d45749,
+  secondary: #000,
+  dark: #000,
+  dark-gray: #414041,
+  light-gray: #4f4f4f,
+  custom-1: #99a5a6,
+  custom-2: #519cd8,
+);
+
+footer a {
+  color: #4f4f4f;
+}
+
+$font-family-sans-serif: "Rubik", sans-serif;
+$font-family-monospace: "SFMono-Regular", "Menlo", "Monaco", "Consolas",
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+html,
+body {
+  font-family: $font-family-sans-serif !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+.carousel-hero {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  bottom: 30%;
+}
+
+.carousel-hero .card {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
+.icon-nav-footer {
+  border: 1px solid gray;
+  border-radius: 500px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.icon-nav-footer img {
+  margin-top: 15px;
+}
+
+#steps img {
+  width: 50px;
+  height: 50px;
+  filter: grayscale(1);
+}
+
+#search-results ul {
+  font-size: small;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  gap: 25px;
+}
+
+#sub-sections img {
+  height: 40vh;
+  width: 40vh;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+#sub-sections .mobile-screenshot img {
+  border-radius: 0;
+  object-fit: contain;
+}
+
+#steps .custom-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+#sub-sections .row {
+  height: 50vh;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-itens-center {
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  #sub-sections img {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 300px;
+    object-fit: cover;
+  }
+
+  h2.h2 {
+    font-size: 4rem;
+    transition: all 1s;
+  }
+
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 25px;
+    transition: all 1s;
+  }
+
+  #steps .custom-grid-item {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h3.h3 {
+    font-size: 1.25rem;
+  }
+
+  h4.h4 {
+    font-size: 1.1rem;
+  }
+
+  #sub-sections img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 200px;
+    object-fit: cover;
+  }
+
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 25px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  a.navbar-brand {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #sub-sections img {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .carousel-hero {
+    left: 5%;
+    right: 5%;
+    bottom: 20%;
+  }
+
+  h2.h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-hero {
+    left: 5%;
+    right: 5%;
+    bottom: 35%;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+  }
+
+  h2.h2 {
+    font-size: 2.3rem;
+    transition: all 1s;
+  }
+
+  h3.h3 {
+    font-size: 1.2rem;
+  }
+
+  h4.h4 {
+    font-size: 1rem;
+  }
+
+  #sub-sections img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
