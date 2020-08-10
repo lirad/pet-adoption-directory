@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="dist/bootstrap/bootstrap.css">
@@ -21,27 +21,33 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
-      <div class="container">
-        <a class="navbar-brand " href="#"><img src="images/logo-white.svg" height="40" alt="logo" /></a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" type="button"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto text-white">
-            <li class="nav-item active">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-md-auto" href="#"><img src="images/logo-white.svg" height="40" alt="logo" /></a>
+
+          <ul class="navbar-nav flex-row justify-content-center ml-lg-auto text-white">
+            <li class="nav-item active mr-2">
               <a href="/search-results.html" class="nav-link text-white">
-                <i class="fa fa-search mr-1"></i>Find a friend <span class="sr-only">(current)</span>
+                <i class="fa fa-search mr-1"></i><span class="d-none d-lg-inline-flex">Find a friend</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-2">
               <a class="nav-link text-white" href="#">
-                <i class="fa fa-user mr-2"></i>About us<span class="sr-only">(current)</span>
+                <i class="fa fa-user mr-2"></i><span class="d-none d-lg-inline-flex">About us</span>
+              </a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link text-white" href="#">
+                <i class="fa fa-rss mr-2"></i><span class="d-none d-lg-inline-flex">Blog</span>
+              </a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link text-white" href="#">
+                <i class="fa fa-bars mr-2"></i><span class="d-none d-lg-inline-flex">More...</span>
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+
+        
     </nav>
   </header>
 
@@ -52,10 +58,10 @@
         <div class="carousel-item active position-relative">
           <img class="d-block w-100" src="images/slider1.jpg" alt="">
           <div class="justify-itens-center carousel-hero">
-            <h2 class="h1 h5-sm text-primary font-weight-bold">Find a friend near you</h2>
+            <h2 class="h2 h5-sm text-primary font-weight-bold">Find a friend near you</h2>
             <div class="card">
               <div class="card-body p-0">
-                <form class="form-inline p-0 py-md-4 px-md-2  p-lg-5 b-rounded" method="get" action="/">
+                <form class="form-inline p-0 py-md-4 px-md-2 p-md-3  p-lg-5 b-rounded" method="get" action="/">
                   <div class="input-group input-group-lg w-100">
                     <input class="form-control" type="text" name="search"
                       placeholder="Search for an type or by location" aria-label="Recipient's ">
@@ -76,10 +82,8 @@
       </div>
     </div>
 
-
-
     <section>
-      <h5 class="p-5 text-center text-primary text-uppercase">AdoptApet works in simple way</h5>
+      <h1 class="p-5 text-center text-primary text-uppercase h4">AdoptApet works in simple way</h1>
       <div class="custom-grid" id="steps">
         <div class="custom-grid-item  d-flex justify-content-center">
           <img src="images/icons/research-icon.svg" class="w-5 text-center" alt="search" />
@@ -114,7 +118,7 @@
 
         <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
           <h3 class="text-white font-weight-light h3">AdoptApet has more than </h3>
-          <h4 class="text-white">1.0000 animals in need for a home</h4>
+          <h4 class="text-white h4">1.0000 animals in need for a home</h4>
         </div>
         <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
           <figure>
@@ -124,11 +128,11 @@
 
       </div>
 
-      <div class="row bg-purple2 text-center d-flex align-itens-center">
+      <div class="row bg-custom-1 text-center d-flex align-itens-center">
 
         <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
           <h3 class="text-white font-weight-light h3">You can help to end this</h3>
-          <h4 class="text-white">right now adopating an homeless pet</h4>
+          <h4 class="text-white h4">right now adopating an homeless pet</h4>
         </div>
         <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
           <figure>
@@ -138,15 +142,15 @@
 
       </div>
 
-      <div class="row bg-purple3 text-center d-flex align-itens-center">
+      <div class="row bg-custom-2 text-center d-flex align-itens-center">
 
         <div class="col-md-6 col-12 d-block d-md-flex flex-md-column justify-content-center align-itens-center">
           <h3 class="text-white font-weight-light h3">It is very easy, use our locator</h3>
           <h4 class="text-white h4">and spread love!</h4>
         </div>
         <div class="col-12 col-md-6 text-center mx-auto mx-md-0">
-          <figure>
-            <img src="images/playingdog.jpg" alt="dog" />
+          <figure class="mobile-screenshot">
+            <img src="images/mobile-screen.png" alt="dog" />
           </figure>
         </div>
 
@@ -157,53 +161,74 @@
 
   <!-- end subsection -->
 
-  <footer>
+  <footer class="bg-dark">
     <div class="flex-row">
-      <div class="col-12 ">
-        <ul class="my-3 list-unstyled d-flex justify-space-evenly align-items-center flex-wrap">
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Home</a></li>
-          <li><a href="/search-results.html" class="btn-link btn text-primary font-weight-bold">Search</a></li>
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold">About</a></li>
-          <li class="d-none d-md-block"><img src="images/icons/icon-paw.svg" height="50" alt="icon" /></li>
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Facebook</a></li>
-          <li><a href="#" class="btn-link btn text-primary font-weight-bold">Twitter</a></li>
-          <li><a href=" #" class="btn-link btn text-primary font-weight-bold">Instagram</a></li>
-        </ul>
+      <div class="container">
+        <div class="col-12 ">
+          <ul class="py-3 list-unstyled d-flex justify-space-between align-items-center flex-wrap">
+            <li><a href="#" class="btn-link btn text-white font-weight-bold">HOME</a></li>
+            <li><a href="/search-results.html" class="btn-link btn text-white font-weight-bold">SEARCH</a></li>
+            <li><a href="#" class="btn-link btn text-white font-weight-bold">ABOUT</a></li>
+            <li><a href="#" class="btn-link btn text-white font-weight-bold">ADVERTISE</a></li>
+            <li class="d-none d-md-block"><img src="images/icons/icon-paw-white.svg" height="50" alt="icon" /></li>
+            <li><a href="#" class="btn-link btn text-white font-weight-bold">FACEBOOK</a></li>
+            <li><a href="#" class="btn-link btn text-white font-weight-bold">TWITTER</a></li>
+            <li><a href=" #" class="btn-link btn text-white font-weight-bold">INSTGRAM</a></li>
+            <li><a href=" #" class="btn-link btn text-white font-weight-bold">GOOGLE +</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="container mt-5 mb-1 ">
       <div class="row">
-        <div class="col-12 col-md-5 text-center">
-          <h6><i class="far fa-envelope mr-1 text-primary"></i>SUBSCRIBE</h6>
+
+        <div class="col-12 col-md-4 text-center">
+          <h6 class="text-white mb-2">SUBSCRIBE</h6>
           <form class="form-inline  b-rounded" method="get" action="/">
             <div class="input-group w-100">
               <input class="form-control" type="text" name="search" placeholder="Subscribe" aria-label="Search">
               <div class="input-group-append">
-                <button class="btn btn-primary d-none d-md-block" type="button"><i class="fas fa-paw mr-1"></i>
+                <button class="btn btn-dark-gray  type=" button"><i class="fas fa-paw mr-1"></i>
                   Go!</button>
               </div>
             </div>
           </form>
         </div>
 
-        <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
-          <h6><i class="far fa-paper-plane mr-1 text-primary"></i> CONTACT</h6>
-          <p>Want to get in touch with us <br />Reach us at <a href="#" class="text-primary">diegoalira@gmail.com</a>
+        <div class="col-12 col-md-4 text-center mt-5 mt-md-0">
+          <h6 class="text-white mb-2">CONTACT</h6>
+          <p class="text-white">Want to get in touch with us <br />Reach us at <a href="#"
+              class="text-primary">diegoalira@gmail.com</a>
+          </p>
+        </div>
+
+
+        <div class="col-12 col-md-4 text-center mt-5 mt-md-0">
+          <h6 class="text-white mb-2">About</h6>
+          <p class="text-white">AdoptApet is a mockup website, it has a learning pourpose and all the animals listed are
+            from stock photos.
+            <a href="https://github.com/lirad" class="text-primary">Learn more</a>
           </p>
         </div>
 
       </div>
+    </div>
 
-      <!-- Footer's last part -->
-      <div class="d-flex flex-row">
-        <div class="col-12 text-center">
-          <a href="index.">
-            <img src="images/logo-gradient.svg" height="20" alt="logo" />
-          </a>
-          <br />
-          <small class="text-sm">Developed with 💗 by <a href="https://github.com/lirad">Diego Lira</a></small>
-        </div>
+    <!-- Footer's last part -->
+    <div class="d-flex flex-row bg-dark-gray p-3">
+      <div class="col-4">
+        <a href="#" class="text-gray"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-gray mx-1"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray mr-1"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="text-gray"><i class="fab fa-instagram"></i></a>
       </div>
+      <div class="col-8 text-right text-light-gray">
+        <a href="index.">
+          <img src="images/logo-white.svg" height="15" alt="logo" />
+        </a>
+        <small class="text-sm">ALL RIGHTS RESERVED <a href="https://github.com/lirad">Diego Lira</a></small>
+      </div>
+    </div>
     </div>
   </footer>
 
